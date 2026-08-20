@@ -1,0 +1,84 @@
+# ============================================
+# 江右猛鼠博客配置
+# 想改什么就在这里改，改完保存即可生效
+# ============================================
+
+# 网站地址（部署后会更新成真实域名）
+baseURL: https://example.org/
+
+# 网站标题
+title: 江右猛鼠
+
+# 语言（中文）
+locale: zh-cn
+defaultContentLanguage: zh-cn
+hasCJKLanguage: true
+
+# 时区（避免日期被误判为未来文章）
+timeZone: Asia/Shanghai
+
+# 使用的主题
+theme: hugo-theme-stack
+
+# 页面 URL 格式（让网址更简洁：/about/ 而不是 /page/about/）
+permalinks:
+  post: /p/:slug/
+  page: /:slug/
+
+# 每页显示的文章数
+pagination:
+  pagerSize: 5
+
+params:
+  # 首页和归档页会展示这两个分类下的文章
+  mainSections:
+    - post
+
+  # RSS 输出全文
+  rssFullContent: true
+
+  # ---------- 左侧边栏 ----------
+  sidebar:
+    emoji: "🐭"
+    subtitle: "记录给未来的自己"
+    avatar: ""
+
+  # ---------- 页脚 ----------
+  footer:
+    since: 2026
+    customText: "江右猛鼠"
+
+  # ---------- 文章 ----------
+  article:
+    headingAnchor: false
+    math: false
+    toc: true          # 文章目录
+    readingTime: true  # 阅读时长
+
+    license:
+      enabled: false
+
+  # ---------- 首页小部件 ----------
+  widgets:
+    homepage:
+      - type: search
+      - type: archives
+        params:
+          limit: 5
+      - type: categories
+        params:
+          limit: 10
+      - type: tag-cloud
+        params:
+          limit: 10
+    page:
+      - type: toc
+
+  # ---------- 深浅色切换 ----------
+  colorScheme:
+    toggle: true
+    default: auto
+
+  # ---------- 评论（暂时关闭，以后想开再说） ----------
+  comments:
+    enabled: false
