@@ -3,8 +3,8 @@
 # 想改什么就在这里改，改完保存即可生效
 # ============================================
 
-# 网站地址（部署后会更新成真实域名）
-baseURL: https://example.org/
+# 网站地址
+baseURL: https://blog-cw88885s-projects.vercel.app/
 
 # 网站标题
 title: 江右猛鼠
